@@ -12,9 +12,10 @@ class Wofost71_PP(Engine):
     :param weatherdataprovider: A WeatherDataProvider object
     :param agromanagement: Agromanagement data
     """
-    config = "Wofost71_PP.conf"
+    
 
-    def __init__(self, parameterprovider, weatherdataprovider, agromanagement):
+    def __init__(self, parameterprovider, weatherdataprovider, agromanagement,
+                 config = "Wofost71_PP.conf"):
         Engine.__init__(self, parameterprovider, weatherdataprovider, agromanagement,
                         config=self.config)
 
@@ -26,9 +27,10 @@ class Wofost71_WLP_FD(Engine):
     :param weatherdataprovider: A WeatherDataProvider object
     :param agromanagement: Agromanagement data
     """
-    config = "Wofost71_WLP_FD.conf"
+    
 
-    def __init__(self, parameterprovider, weatherdataprovider, agromanagement):
+    def __init__(self, parameterprovider, weatherdataprovider, agromanagement,
+                 config = "Wofost71_WLP_FD.conf"):
         Engine.__init__(self, parameterprovider, weatherdataprovider, agromanagement,
                         config=self.config)
 
@@ -48,9 +50,10 @@ class LINTUL3(Engine):
     :param agromanagement: AgroManagement data. The data format is described
         in the section on agronomic management.
     """
-    config = "Lintul3.conf"
+    
 
-    def __init__(self, parameterprovider, weatherdataprovider, agromanagement):
+    def __init__(self, parameterprovider, weatherdataprovider, agromanagement,
+                 config = "Lintul3.conf"):
         Engine.__init__(self, parameterprovider, weatherdataprovider, agromanagement,
                         config=self.config)
 
@@ -63,9 +66,10 @@ class FAO_WRSI_Potential(Engine):
     :param agromanagement: Agromanagement data
     """
 
-    config = "GreenLayerCrop_PP.conf"
+    
 
-    def __init__(self, parameterprovider, weatherdataprovider, agromanagement):
+    def __init__(self, parameterprovider, weatherdataprovider, agromanagement,
+                 config = "GreenLayerCrop_PP.conf"):
         Engine.__init__(self, parameterprovider, weatherdataprovider, agromanagement,
                         config=self.config)
 
@@ -79,8 +83,9 @@ class FAO_WRSI_WaterLimited(Engine):
     :param agromanagement: Agromanagement data
     """
 
-    config = "GreenLayerCrop_WLP.conf"
+    
 
-    def __init__(self, parameterprovider, weatherdataprovider, agromanagement):
+    def __init__(self, parameterprovider, weatherdataprovider, agromanagement, 
+                 config = "GreenLayerCrop_WLP.conf"):
         Engine.__init__(self, parameterprovider, weatherdataprovider, agromanagement,
                         config=self.config)
